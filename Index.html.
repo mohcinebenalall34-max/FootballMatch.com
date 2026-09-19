@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Scores</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f5f7;
+      color: #171717;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 18px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 12px;
+    }
+
+    .date {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .league {
+      background: white;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .league-title {
+      background: #e5e7eb;
+      padding: 12px;
+      font-weight: bold;
+    }
+
+    .match {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 12px;
+      border-top: 1px solid #eee;
+    }
+
+    .teams {
+      line-height: 1.8;
+    }
+
+    .score {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .live {
+      color: #dc2626;
+      font-size: 13px;
+      font-weight: bold;
+      margin-top: 4px;
+    }
+
+    .upcoming {
+      color: #2563eb;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>⚽ Football Scores</h1>
+</header>
+
+<div class="container">
+
+  <div class="date">Today's Matches</div>
+
+  <div class="league">
+    <div class="league-title">🏆 Premier League</div>
+
+    <div class="match">
+      <div class="teams">
+        Arsenal<br>
+        Manchester United
+      </div>
+
+      <div class="score">
+        2 - 1
+        <div class="live">🔴 67'</div>
+      </div>
+    </div>
+
+    <div class="match">
+      <div class="teams">
+        Chelsea<br>
+        Liverpool
+      </div>
+
+      <div class="score">
+        15:00
+        <div class="upcoming">Upcoming</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="league">
+    <div class="league-title">🇪🇸 La Liga</div>
+
+    <div class="match">
+      <div class="teams">
+        Real Madrid<br>
+        Barcelona
+      </div>
+
+      <div class="score">
+        18:30
+        <div class="upcoming">Upcoming</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="league">
+    <div class="league-title">🇮🇹 Serie A</div>
+
+    <div class="match">
+      <div class="teams">
+        Inter Milan<br>
+        AC Milan
+      </div>
+
+      <div class="score">
+        20:45
+        <div class="upcoming">Upcoming</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
